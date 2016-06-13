@@ -175,7 +175,7 @@ public final class SwiftRestClient {
    */
   private final String container;
   private final String serviceDescription;
-
+  private final String containertenant;
   /**
    * Access token (Secret)
    */
@@ -496,6 +496,8 @@ public final class SwiftRestClient {
     region = props.getProperty(SWIFT_REGION_PROPERTY);
     //tenant is optional
     tenant = props.getProperty(SWIFT_TENANT_PROPERTY);
+    //
+    containertenant = props.getProperty(SWIFT_CONTAINER_TENANT_PROPERTY);
     //service is used for diagnostics
     serviceProvider = props.getProperty(SWIFT_SERVICE_PROPERTY);
     container = props.getProperty(SWIFT_CONTAINER_PROPERTY);
