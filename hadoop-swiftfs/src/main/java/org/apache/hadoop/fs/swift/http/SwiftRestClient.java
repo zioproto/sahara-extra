@@ -1963,6 +1963,14 @@ public final class SwiftRestClient {
   public String getTenant() {
     return tenant;
   }
+  
+  /**
+   * Get the tenant to which this client is bound
+   * @return the tenant
+   */
+  public String getContainerTenant() {
+    return containertenant;
+  }
 
   /**
    * Get the username this client identifies itself as
